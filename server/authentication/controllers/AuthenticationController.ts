@@ -1,8 +1,9 @@
-import Joi, {ObjectSchema} from "joi";
+const Joi = require('joi');
+import {ObjectSchema} from "joi";
 
 const jwt = require("jsonwebtoken");
 import {Request, Response} from 'express';
-import crypto from "crypto";
+const crypto = require("crypto");
 
 const prisma = require('../../config/prisma');
 
