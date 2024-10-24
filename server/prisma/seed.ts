@@ -10,20 +10,20 @@ const encryptPassword = (password: string) => {
 
 async function main() {
 	const alice = await prisma.user.upsert({
-		where: {email: 'alice@prisma.io'},
+		where: {email: 'alice@test.io'},
 		update: {},
 		create: {
-			email: 'alice@prisma.io',
+			email: 'alice@test.io',
 			firstname: 'Bob',
 			surname: 'Doe',
 			password: encryptPassword('password@1234'),
 		},
 	})
 	const bob = await prisma.user.upsert({
-		where: {email: 'bob@prisma.io'},
+		where: {email: 'bob@test.io'},
 		update: {},
 		create: {
-			email: 'bob@prisma.io',
+			email: 'bob@test.io',
 			firstname: 'Bob',
 			surname: 'Doe',
 			password: encryptPassword('password@1234'),
