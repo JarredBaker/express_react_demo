@@ -5,7 +5,7 @@ Express.js backend with JWT authentication and a React.js frontend.
 ## Server features: 
 
 1. JWT authentication chain. 
-2. Param filtering. 
+2. Permitted param filtering. 
 3. Query string sanitization. 
 4. Prisma ORM (Object relationship mapping): Used to map models to the DB tables, run migrations and provide an API for querying the DB.
 5. Search caching configuration.
