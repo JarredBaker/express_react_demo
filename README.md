@@ -80,7 +80,7 @@ pg_restore -U <your_username> -d postgres -h localhost -p 5432 -d starwars_db -F
  npx prisma db seed
 ```
 
-Run the server: 
+### Run the server: 
 
 ```bash
 DEBUG=server:* npm start 
