@@ -1,6 +1,12 @@
 import {PrismaClient} from '@prisma/client'
+const crypto = require("crypto");
 
 const prisma = new PrismaClient()
+
+const encryptPassword = (password: string) => {
+	const hash = crypto.createHash("sha256");
+	return hash.update(password).digest("hex");
+};
 
 async function main() {
 	const alice = await prisma.user.upsert({
@@ -10,7 +16,7 @@ async function main() {
 			email: 'alice@prisma.io',
 			firstname: 'Bob',
 			surname: 'Doe',
-			password: 'password',
+			password: encryptPassword('password@1234'),
 		},
 	})
 	const bob = await prisma.user.upsert({
@@ -20,7 +26,7 @@ async function main() {
 			email: 'bob@prisma.io',
 			firstname: 'Bob',
 			surname: 'Doe',
-			password: 'password',
+			password: encryptPassword('password@1234'),
 		},
 	})
 	// @ts-ignore
