@@ -1,4 +1,4 @@
-# express_react_demo
+# Express.js and React.js Demo
 
 Express.js backend with JWT authentication and a React.js frontend. 
 
@@ -8,7 +8,14 @@ Express.js backend with JWT authentication and a React.js frontend.
 2. Param filtering. 
 3. Query string sanitization. 
 4. Prisma ORM (Object relationship mapping): Used to map models to the DB tables, run migrations and provide an API for querying the DB.
+5. Search caching configuration.
  
+### Front end features: 
+
+1. JWT authentication (Signup, login and logout).
+2. Search autocomplete and select. 
+3. Cache settings update. 
+
 ## Steps to run: 
 ### Server: 
 
