@@ -17,6 +17,14 @@ Express.js backend with JWT authentication and a React.js frontend.
 3. Cache settings update. 
 
 ## Steps to run: 
+
+Clone the repo: 
+
+```bash
+git clone https://github.com/JarredBaker/express_react_demo.git
+cd express_react_demo
+```
+
 ### Server: 
 
 #### DB setup: 
