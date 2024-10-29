@@ -1,5 +1,6 @@
 import {Request, Response} from 'express';
-import Joi, {ObjectSchema} from "joi";
+const Joi = require('joi');
+import {ObjectSchema} from "joi";
 
 const prisma = require('../../config/prisma');
 
